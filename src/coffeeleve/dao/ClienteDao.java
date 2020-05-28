@@ -12,7 +12,7 @@ import coffeeleve.models.Cliente;
 
 public class ClienteDao implements iDao<Cliente> {
 
-    private EntityManagerFactory factory = Persistence.createEntityManagerFactory("TRABALHO");
+    private EntityManagerFactory factory = Persistence.createEntityManagerFactory("CoffeeLeve");
     private EntityManager em = factory.createEntityManager();
 
     public ClienteDao() {

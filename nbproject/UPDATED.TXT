@@ -1,5 +1,5 @@
 =====================================
-Project TRABALHO build script updated
+Project CoffeeLeve build script updated
 =====================================
 
 Project build script file jfx-impl.xml in nbproject sub-directory has not been recognized

@@ -22,7 +22,7 @@ import coffeeleve.models.Cliente;
 import coffeeleve.dao.ClienteDao;
 
 
-public class FXMLDocumentController implements Initializable {
+public class FXMLCadastrarCliente implements Initializable {
 
     private Label label;
     @FXML

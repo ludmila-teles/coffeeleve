@@ -1,5 +1,6 @@
 package coffeeleve.dao;
 
+import coffeeleve.database.Manager;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -12,11 +13,11 @@ import coffeeleve.models.Cliente;
 
 public class ClienteDao implements iDao<Cliente> {
 
-    private EntityManagerFactory factory = Persistence.createEntityManagerFactory("CoffeeLeve");
-    private EntityManager em = factory.createEntityManager();
+    private EntityManager em;
 
     public ClienteDao() {
-
+        Manager manager = Manager.getInstance();
+        em = manager.getEntityManager();
     }
 
     @Override

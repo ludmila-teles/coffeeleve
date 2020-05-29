@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" fx:id="anpMain" maxHeight="403.0" maxWidth="767.0" minHeight="336.0" minWidth="667.0" prefHeight="403.0" prefWidth="767.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coffeeleve.controllers.FXMLDocumentController">
+<AnchorPane id="AnchorPane" fx:id="anpMain" maxHeight="403.0" maxWidth="767.0" minHeight="336.0" minWidth="667.0" prefHeight="403.0" prefWidth="767.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coffeeleve.controllers.FXMLCadastrarClienteController">
     <children>
       <VBox layoutX="274.0" layoutY="29.0" prefHeight="336.0" prefWidth="722.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -57,7 +57,7 @@
                                     <TableColumn fx:id="tbcTel" prefWidth="75.0" text="Tel" />
                                 </columns>
                                  <columnResizePolicy>
-                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                    <!--<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />-->
                                  </columnResizePolicy>
                               </TableView>
                               <TextField fx:id="txfProcura" layoutX="90.0" layoutY="2.0" promptText="pesquisar usuário" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />

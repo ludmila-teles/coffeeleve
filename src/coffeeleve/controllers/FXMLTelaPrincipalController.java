@@ -55,7 +55,7 @@ public class FXMLTelaPrincipalController implements Initializable {
          * if "fx:controller" is not set in fxml
          * fxmlLoader.setController(NewWindowController);
          */
-        Scene scene = new Scene(fxmlLoader.load(), 800, 500);
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
         Stage stage = new Stage();
         stage.setTitle("CADASTRAR CLIENTE");
         stage.setScene(scene);

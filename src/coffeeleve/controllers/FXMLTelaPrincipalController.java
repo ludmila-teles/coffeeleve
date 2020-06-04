@@ -69,6 +69,23 @@ public class FXMLTelaPrincipalController implements Initializable {
 
     @FXML
     private void cadastrarFornecedor(ActionEvent event) {
+        try {
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("/coffeeleve/views/FXMLCadastrarFornecedor.fxml"));
+        /* 
+         * if "fx:controller" is not set in fxml
+         * fxmlLoader.setController(NewWindowController);
+         */
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Stage stage = new Stage();
+        stage.setTitle("CADASTRAR FORNECEDOR");
+        stage.setScene(scene);
+        stage.show();
+    } catch (IOException e) {
+        Logger logger = Logger.getLogger(getClass().getName());
+        logger.log(Level.SEVERE, "Failed to create new Window.", e);
+    }
+        
     }
 
     @FXML

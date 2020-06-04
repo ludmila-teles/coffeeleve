@@ -7,6 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane id="AnchorPane" fx:id="anpMain" maxHeight="403.0" maxWidth="767.0" minHeight="336.0" minWidth="667.0" prefHeight="403.0" prefWidth="767.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coffeeleve.controllers.FXMLTelaPrincipalController">
     <children>
@@ -20,7 +21,7 @@
                            <children>
                               <VBox layoutX="65.0" layoutY="52.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
-                                    <ImageView fitHeight="416.0" fitWidth="380.0" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fitHeight="405.0" fitWidth="384.0" pickOnBounds="true">
                                        <image>
                                           <Image url="@../../res/logo.png" />
                                        </image>
@@ -30,10 +31,22 @@
                         </AnchorPane>
                       <AnchorPane maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="373.0" prefWidth="394.0">
                            <children>
-                                <Button fx:id="btnCadastrarCliente" layoutX="-3.0" layoutY="40.0" maxWidth="1.7976931348623157E308" onAction="#cadastrarCliente" prefHeight="59.0" prefWidth="386.0" text="Cadastrar Cliente" />
-                              <Button fx:id="btnCadastrarFornecedor" layoutY="133.0" maxWidth="1.7976931348623157E308" onAction="#cadastrarFornecedor" prefHeight="59.0" prefWidth="386.0" text="Cadastrar Fornecedor" />
-                              <Button fx:id="btnCadastrarProduto" layoutX="-3.0" layoutY="224.0" maxWidth="1.7976931348623157E308" onAction="#cadastrarProduto" prefHeight="59.0" prefWidth="386.0" text="Cadastrar Produto" />
-                              <Button fx:id="btnVendas" layoutX="-3.0" layoutY="311.0" maxWidth="1.7976931348623157E308" onAction="#vendas" prefHeight="59.0" prefWidth="386.0" text="Vendas" />
+                                <Button fx:id="btnCadastrarCliente" layoutX="86.0" layoutY="41.0" maxWidth="1.7976931348623157E308" onAction="#cadastrarCliente" prefHeight="59.0" prefWidth="208.0" style="-fx-background-radius: 100;" text="Cadastrar Cliente">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font></Button>
+                              <Button fx:id="btnCadastrarFornecedor" layoutX="86.0" layoutY="132.0" maxWidth="1.7976931348623157E308" onAction="#cadastrarFornecedor" prefHeight="59.0" prefWidth="208.0" style="-fx-background-radius: 100;" text="Cadastrar Fornecedor">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font></Button>
+                              <Button fx:id="btnCadastrarProduto" layoutX="86.0" layoutY="220.0" maxWidth="1.7976931348623157E308" onAction="#cadastrarProduto" prefHeight="59.0" prefWidth="208.0" style="-fx-background-radius: 100;" text="Cadastrar Produto">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font></Button>
+                              <Button fx:id="btnVendas" layoutX="86.0" layoutY="309.0" maxWidth="1.7976931348623157E308" onAction="#vendas" prefHeight="59.0" prefWidth="208.0" style="-fx-background-radius: 100;" text="Vendas">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font></Button>
                            </children>
                         </AnchorPane>
                     </items>

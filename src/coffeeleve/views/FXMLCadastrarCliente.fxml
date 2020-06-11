@@ -47,21 +47,24 @@
                               </VBox>
                            </children>
                         </AnchorPane>
-                      <AnchorPane maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="373.0" prefWidth="394.0">
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="373.0" prefWidth="394.0">
                            <children>
                               <TableView fx:id="tbUser" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="303.0" prefWidth="450.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
-                                <columns>
-                                  <TableColumn fx:id="tbcId" prefWidth="38.0" style="-fx-background-radius: 100;" text="Id" />
-                                  <TableColumn fx:id="tbcNome" prefWidth="97.0" style="-fx-background-radius: 100;" text="Nome" />
-                                    <TableColumn fx:id="tbcSobreNome" prefWidth="104.0" style="-fx-background-radius: 100;" text="Sobrenome" />
-                                    <TableColumn fx:id="tbcCpf" prefWidth="56.0" style="-fx-background-radius: 100;" text="CPF" />
-                                    <TableColumn fx:id="tbcTel" prefWidth="75.0" style="-fx-background-radius: 100;" text="Tel" />
+<!--                                <columnResizePolicy>
+                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                </columnResizePolicy>-->
+                                  <columns>
+                                  <TableColumn fx:id="tbcId" prefWidth="40.0" style="-fx-background-radius: 100;" text="Id" />
+                                  <TableColumn fx:id="tbcNome" prefWidth="150.0" style="-fx-background-radius: 100;" text="Nome" />
+                                    <TableColumn fx:id="tbcSobreNome" prefWidth="100.0" style="-fx-background-radius: 100;" text="Sobrenome" />
+                                    <TableColumn fx:id="tbcCpf" prefWidth="120.0" style="-fx-background-radius: 100;" text="CPF" />
+                                    <TableColumn fx:id="tbcTel" prefWidth="90.0" style="-fx-background-radius: 100;" text="Tel" />
                                 </columns>
                                  <columnResizePolicy>
                                     <!--<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />-->
                                  </columnResizePolicy>
                               </TableView>
-                              <TextField fx:id="txfProcura" layoutX="90.0" layoutY="2.0" promptText="pesquisar usuário" style="-fx-background-radius: 100;" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+                              <TextField fx:id="txfProcura" layoutX="90.0" layoutY="2.0" promptText="pesquisar cliente " style="-fx-background-radius: 100;" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
                            </children>
                         </AnchorPane>
                     </items>

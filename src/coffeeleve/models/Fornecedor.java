@@ -12,8 +12,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name="FORNECEDOR")
 @NamedQueries({
-    @NamedQuery(name = "findAll", query = "select f from Fornecedor f"),
-    @NamedQuery(name = "findUser", query = "select f from Fornecedor f where f.razaosocial like :razaosocial")
+    @NamedQuery(name = "findAllFornecedor", query = "select f from Fornecedor f"),
+    @NamedQuery(name = "findByRazaoSocial", query = "select f from Fornecedor f where f.razaosocial like :razaosocial")
 })
 public class Fornecedor implements Serializable{
     @Id

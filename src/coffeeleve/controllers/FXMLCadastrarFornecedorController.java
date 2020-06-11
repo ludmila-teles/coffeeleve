@@ -82,6 +82,9 @@ public class FXMLCadastrarFornecedorController implements Initializable{
 //        stage.setResizable(false);
 
         tbUser.setOnMouseClicked((event) -> {
+             if (tbUser.getSelectionModel().getSelectedItem() == null)
+                return;
+            
             selected = tbUser.getSelectionModel().getSelectedItem();
 
             txfRazaoSocial.setText(selected.getRazaosocial());

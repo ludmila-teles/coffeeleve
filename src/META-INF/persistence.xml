@@ -3,6 +3,7 @@
   <persistence-unit name="CoffeeLeve" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>coffeeleve.models.Cliente</class>
+    <class>coffeeleve.models.Fornecedor</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:sqlite:/C:/DBLite/POO2.db"/>
       <property name="javax.persistence.jdbc.user" value="root"/>

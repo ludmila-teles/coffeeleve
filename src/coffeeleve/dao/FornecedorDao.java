@@ -45,12 +45,13 @@ public class FornecedorDao implements iDao<Fornecedor>{
 
     @Override
     public List<Fornecedor> listClient() {
-      return em.createNamedQuery("findAll", Fornecedor.class).getResultList();
+      return em.createNamedQuery("findAllFornecedor", Fornecedor.class).getResultList();
     }
 
     @Override
-    public List<Fornecedor> searchClient(String nome) {
-        return em.createNamedQuery("findUser", Fornecedor.class).setParameter("razaosocial", "%"+nome+"%").getResultList();
+    public List<Fornecedor> searchClient(String razaosocial) {
+        
+        return em.createNamedQuery("findByRazaoSocial", Fornecedor.class).setParameter("razaosocial", "%"+razaosocial+"%").getResultList();
     }
 
     @Override

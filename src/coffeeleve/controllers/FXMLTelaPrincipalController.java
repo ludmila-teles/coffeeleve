@@ -51,14 +51,12 @@ public class FXMLTelaPrincipalController implements Initializable {
     try {
         FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(getClass().getResource("/coffeeleve/views/FXMLCadastrarCliente.fxml"));
-        /* 
-         * if "fx:controller" is not set in fxml
-         * fxmlLoader.setController(NewWindowController);
-         */
+        
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
         Stage stage = new Stage();
         stage.setTitle("CADASTRAR CLIENTE");
         stage.setScene(scene);
+        stage.setMaximized(true);
         stage.show();
     } catch (IOException e) {
         Logger logger = Logger.getLogger(getClass().getName());
@@ -72,14 +70,12 @@ public class FXMLTelaPrincipalController implements Initializable {
         try {
         FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(getClass().getResource("/coffeeleve/views/FXMLCadastrarFornecedor.fxml"));
-        /* 
-         * if "fx:controller" is not set in fxml
-         * fxmlLoader.setController(NewWindowController);
-         */
+        
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
         Stage stage = new Stage();
         stage.setTitle("CADASTRAR FORNECEDOR");
         stage.setScene(scene);
+        stage.setMaximized(true);
         stage.show();
     } catch (IOException e) {
         Logger logger = Logger.getLogger(getClass().getName());

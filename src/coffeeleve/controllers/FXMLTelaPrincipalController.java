@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package coffeeleve.controllers;
 
 import java.io.IOException;
@@ -19,11 +14,6 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-/**
- * FXML Controller class
- *
- * @author Ludmila
- */
 public class FXMLTelaPrincipalController implements Initializable {
 
     @FXML
@@ -37,12 +27,10 @@ public class FXMLTelaPrincipalController implements Initializable {
     @FXML
     private Button btnVendas;
 
-    /**
-     * Initializes the controller class.
-     */
+  
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+ 
     }    
 
     @FXML
@@ -86,6 +74,20 @@ public class FXMLTelaPrincipalController implements Initializable {
 
     @FXML
     private void cadastrarProduto(ActionEvent event) {
+         try {
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("/coffeeleve/views/FXMLCadastrarProduto.fxml"));
+        
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Stage stage = new Stage();
+        stage.setTitle("CADASTRAR PRODUTO");
+        stage.setScene(scene);
+        stage.setMaximized(true);
+        stage.show();
+    } catch (IOException e) {
+        Logger logger = Logger.getLogger(getClass().getName());
+        logger.log(Level.SEVERE, "Failed to create new Window.", e);
+    }
     }
 
     @FXML
